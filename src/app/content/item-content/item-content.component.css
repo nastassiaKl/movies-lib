@@ -1,0 +1,12 @@
+.offer {
+    background-color: #000;
+    color: #fff;
+}
+
+.offer__intro{
+    text-align: center;
+}
+
+.poster{
+    max-height: 300px;
+}

@@ -1,0 +1,30 @@
+<section class="offer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+             <div class="select__offer d-flex flex-wrap">
+                  <div class="col-lg-5">
+                      <div class="d-flex justify-content-center">
+                        <img src="{{item.poster_path}}"  alt="{{item.title}}" class="poster">
+                      </div> 
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="offer__intro">
+                        <h2 class="offer__title">
+                            {{item.title}}
+                        </h2>
+                        <div class="offer__yers">
+                            {{item.release_date | date:'longDate'}}
+                        </div>
+                        <p class="offer__text">
+                          {{item.overview}}
+                        </p>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div> 
+      </div>
+  </div>
+     
+</section>

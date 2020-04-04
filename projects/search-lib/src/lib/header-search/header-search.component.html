@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="updateFilms()">
+  <div class="form-group">
+    <input formControlName="search" type="text" placeholder="Input genre" class="form__input" #inpGenre required (keyup)="onKeyUp(inpGenre.value)">
+    <p *ngIf="form.get('search').invalid && form.get('search').touched" > Please fill out this form</p>
+    <p *ngIf ="inputText">Unfortunately, the function is still under development. You can see all films in the console or see detailed information about the available films below.</p>
+  </div>
+  <div class="form-group">
+    <div class="search__type d-flex flex-wrap">
+      <!-- <p>search by</p>
+      <button type="submit" class="search__btn">title</button>
+      <button type="submit" class="search__btn">genre</button> -->
+      <button type="submit" class="form__btn ml-auto" >SUBMIT</button>
+    </div>
+  </div>
+</form>

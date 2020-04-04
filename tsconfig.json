@@ -1,0 +1,60 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "lib": [
+        "dist/lib"
+      ],
+      "lib/*": [
+        "dist/lib/*"
+      ],
+      "search": [
+        "dist/search"
+      ],
+      "search/*": [
+        "dist/search/*"
+      ],
+      "header-search": [
+        "dist/header-search",
+        "dist/header-search"
+      ],
+      "header-search/*": [
+        "dist/header-search/*",
+        "dist/header-search/*"
+      ],
+      "search-header": [
+        "dist/search-header"
+      ],
+      "search-header/*": [
+        "dist/search-header/*"
+      ],
+      "search-lib": [
+        "dist/search-lib"
+      ],
+      "search-lib/*": [
+        "dist/search-lib/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}

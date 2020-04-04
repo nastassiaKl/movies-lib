@@ -1,0 +1,41 @@
+.film {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.film__block {
+    margin-bottom: 25px
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #212529;
+}
+.film-poster img {
+    max-width: 200px;
+}
+
+.film-poster {
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    -webkit-text-stroke: 0.3px black;
+    margin: 0;
+}
+
+.film__genre {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #212529
+}
+
+.film__genre:not(:last-child):after{
+    content: ',';
+}
+
+.films__number {
+    margin: 10px 0;
+}

@@ -1,0 +1,37 @@
+<section class="films__number">
+<div class="container">
+    <div class="row">
+         <div class="col-lg-12">
+            <p>найдено <span>{{films.length}}</span> фильмов</p>
+         </div>
+    </div>
+</div>
+</section>
+
+<section>
+  <div class="container">
+      <div class="row equal">
+          <div *ngFor="let film of films" class="col-lg-4" >
+              <a [routerLink]="['/film',film.id]" class="film d-flex justify-content-center">
+                  <div class="film__block">
+                      <div class="film-poster" >
+                        <img src="{{film.poster_path}}"  alt="{{film.title}}">
+                      </div>
+                      <h4 class="film__title">
+                         {{film.title}}
+                      </h4>
+                      <p  class="film__text">
+                          {{film.runtime}} min
+                      </p>
+                      <!-- <p>genres:</p> -->
+                      <div class="d-flex justify-content-center">
+                        <p *ngFor="let genre of film.genres" class="film__genre d-flex">
+                        {{genre}}
+                        </p>
+                      </div> 
+                  </div>
+              </a>
+          </div> 
+      </div>
+  </div>
+</section>
